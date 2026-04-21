@@ -372,6 +372,14 @@ a { color: inherit; }
 
 .card__media:hover img { transform: scale(1.03); }
 
+/* Non-clickable thumbnail — disable the hover affordance */
+.card__media--static { cursor: default; }
+.card__media--static:hover {
+  transform: none;
+  box-shadow: none;
+}
+.card__media--static:hover img { transform: none; }
+
 .card__tag {
   position: relative;
   z-index: 1;
